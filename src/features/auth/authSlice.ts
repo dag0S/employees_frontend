@@ -40,5 +40,3 @@ export const {logout} = slice.actions;
 export default slice.reducer;
 export const selectIsAuthenticated = (state: RootState) => state.auth.isAuthenticated;
 export const selectUser = (state: RootState) => state.auth.user;
-
-// 5: 05: 00
