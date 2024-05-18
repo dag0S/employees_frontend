@@ -31,20 +31,22 @@ const columns: ColumnsType<Employee> = [
 
 const Employees: FC = () => {
   const navigate = useNavigate();
-  const user = useSelector(selectUser)
+  const user = useSelector(selectUser);
   const { data, isLoading } = useGetAllEmployeesQuery();
 
   useEffect(() => {
     if (!user) {
-      navigate(Paths.login)
+      navigate(Paths.login);
     }
-  }, [navigate, user])
+  }, [navigate, user]);
+
+  const addUser = () => navigate(Paths.employeeAdd);
 
   return (
     <Layout>
       <CustomButton
         type="primary"
-        onClick={() => null}
+        onClick={addUser}
         icon={<PlusCircleOutlined />}
       >
         Добавить
