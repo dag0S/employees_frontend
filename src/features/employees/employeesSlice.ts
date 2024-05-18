@@ -1,4 +1,4 @@
-import { Employee } from "@prisma/client";
+import { Employee } from "../../types";
 import { createSlice } from "@reduxjs/toolkit";
 import { employeesApi } from "../../app/services/employees";
 import { RootState } from "../../app/store";

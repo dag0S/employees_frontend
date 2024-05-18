@@ -1,4 +1,4 @@
-import { User } from "@prisma/client";
+import { User } from "../../types";
 import { createSlice } from "@reduxjs/toolkit";
 import { authApi } from "../../app/services/auth";
 import { RootState } from "../../app/store";
