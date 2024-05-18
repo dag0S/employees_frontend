@@ -8,12 +8,13 @@ import { Paths } from "./paths.ts";
 import Login from "./pages/Login/Login.tsx";
 import Register from "./pages/Register/Register.tsx";
 import Auth from "./features/auth/Auth.tsx";
+import Employees from "./pages/Employees/Employees.tsx";
 import "./index.scss";
 
 const router = createBrowserRouter([
   {
     path: Paths.home,
-    element: <div>Employees</div>,
+    element: <Employees />,
   },
   {
     path: Paths.login,
