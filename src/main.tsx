@@ -12,6 +12,7 @@ import Employees from "./pages/Employees/Employees.tsx";
 import AddEmployee from "./pages/AddEmployee/AddEmployee.tsx";
 import Status from "./pages/Status/Status.tsx";
 import Employee from "./pages/Employee/Employee.tsx";
+import EditEmployee from "./pages/EditEmployee/EditEmployee.tsx";
 import "./index.scss";
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: `${Paths.employee}/:id`,
     element: <Employee />,
+  },
+  {
+    path: `${Paths.employeeEdit}/:id`,
+    element: <EditEmployee />,
   },
 ]);
 

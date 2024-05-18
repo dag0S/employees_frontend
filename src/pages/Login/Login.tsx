@@ -12,7 +12,7 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
 const Login: FC = () => {
   const navigate = useNavigate();
-  const [loginUser, loginUserResult] = useLoginMutation();
+  const [loginUser] = useLoginMutation();
   const [error, setError] = useState("");
 
   const login = async (data: UserData) => {
