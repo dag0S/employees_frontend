@@ -11,6 +11,7 @@ import Auth from "./features/auth/Auth.tsx";
 import Employees from "./pages/Employees/Employees.tsx";
 import AddEmployee from "./pages/AddEmployee/AddEmployee.tsx";
 import Status from "./pages/Status/Status.tsx";
+import Employee from "./pages/Employee/Employee.tsx";
 import "./index.scss";
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: `${Paths.status}/:status`,
     element: <Status />,
+  },
+  {
+    path: `${Paths.employee}/:id`,
+    element: <Employee />,
   },
 ]);
 
