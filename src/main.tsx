@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ConfigProvider, theme } from "antd";
-import 'dotenv/config'
 import { store } from "./app/store.ts";
 import { Paths } from "./paths.ts";
 import Login from "./pages/Login/Login.tsx";
